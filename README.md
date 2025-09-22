@@ -27,9 +27,9 @@ It provides an **interactive graph canvas** powered by ReactFlow and a **step-by
 
 ---
 
-## Demo
+## Live Demo
 
-![App Screenshot](./screenshot.png) <!-- optional screenshot -->
+https://opti-route-mu.vercel.app/
 
 Try it locally 👇
 
