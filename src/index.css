@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.react-flow__node {
+  background: #fff;
+  border: 1px solid #1a192b;
+  border-radius: 50%;
+  padding: 10px;
+}
