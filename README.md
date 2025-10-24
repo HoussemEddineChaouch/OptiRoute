@@ -27,9 +27,9 @@ It provides an **interactive graph canvas** powered by ReactFlow and a **step-by
 
 ---
 
-## Demo
+## Live Demo
 
-![App Screenshot](./screenshot.png) <!-- optional screenshot -->
+https://opti-route-mu.vercel.app/
 
 Try it locally 👇
 
@@ -39,7 +39,7 @@ Try it locally 👇
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/optiroute.git
+git clone https://github.com/HoussemEddineChaouch/optiroute.git
 cd optiroute
 
 # Install dependencies
@@ -99,6 +99,6 @@ Contributions are what make the open-source community such an amazing place to l
 - Write unit tests to ensure algorithm correctness.
 - Translate UI into other languages.
 
-## Contributing
+## License
 
 MIT License © 2025 Houssem Eddine Chaouch
