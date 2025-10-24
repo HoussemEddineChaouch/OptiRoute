@@ -12,6 +12,7 @@ function permute(arr) {
 }
 
 export function tspBruteForce(matrix, nodes) {
+  const startTime = performance.now();
   const n = matrix.length;
   if (n === 0) return { path: [], cost: 0 };
 
@@ -42,6 +43,9 @@ export function tspBruteForce(matrix, nodes) {
     }
   }
 
+  const endTime = performance.now();
+  const computationTime = (endTime - startTime).toFixed(2) + " ms";
+
   // Handle case where no valid path was found
   if (bestPath.length === 0 && n > 0) {
     return {
@@ -55,5 +59,6 @@ export function tspBruteForce(matrix, nodes) {
   return {
     path: bestPath.map((i) => nodeNames[i] || `Node ${i}`),
     cost: minCost,
+    time: computationTime,
   };
 }
