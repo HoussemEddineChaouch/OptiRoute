@@ -7,7 +7,6 @@ import Card from "./Card";
 
 import Layout from "./Layout";
 
-
 gsap.registerPlugin(TextPlugin);
 
 function Header() {
@@ -28,27 +27,21 @@ function Header() {
 
   return (
     <>
-      <div className="container mx-auto">
-        <div className="p-10 w-[95%] h-[30vh] mt-8 mx-auto rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-between">
-          <div className="w-1/2 font-poppins space-y-3 text-white">
-            <h1 ref={textRef} className="font-bold text-xl">
-              {" "}
-            </h1>
+      <div className="conatiner mx-auto w-[95vw] h-[30vh] mt-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center">
+        <div className="w-full text-xl md:w-1/2 px-4 font-poppins space-y-3 text-white">
+          <h1 ref={textRef} className="font-bold md:text-xl">
+            {""}
+          </h1>
 
-            <p className="text-sm text-justify leading-7 opacity-80">
-              OptiRoute is a React-based web app that allows users to create
-              graphs, assign edge weights, and solve the Traveling Salesman
-              Problem (TSP) using a brute-force algorithm. It provides an
-              interactive graph canvas powered by ReactFlow and a step-by-step
-              solution display with detailed path costs.
-            </p>
-          </div>
-          <div className="w-1/2">
-            {/* <img src={icon} alt="icon" className="w-36 mx-auto " /> */}
-          </div>
+          <p className="text-sm text-justify md:leading-7 opacity-80">
+            OptiRoute is a React-based web app that allows users to create
+            graphs, assign edge weights, and solve the Traveling Salesman
+            Problem (TSP) using a brute-force algorithm. It provides an
+            interactive graph canvas powered by ReactFlow and a step-by-step
+            solution display with detailed path costs.
+          </p>
         </div>
       </div>
-
       <Layout />
     </>
   );

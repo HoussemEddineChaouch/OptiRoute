@@ -5,7 +5,7 @@ import { GrClearOption } from "react-icons/gr";
 
 function ToolPanel({ resetRoutes, clearAllGraph, nodes, edges, handleSolve }) {
   return (
-    <div className="w-1/4 flex flex-col justify-between h-80 p-4 rounded-xl font-poppins bg-white border">
+    <div className="w-full md:w-1/4 flex flex-col justify-between h-80 p-4 rounded-xl font-poppins bg-white border">
       <div className="space-y-1">
         <h1 className="font-semibold">Control Panel</h1>
         <h2 className="text-xs opacity-50">

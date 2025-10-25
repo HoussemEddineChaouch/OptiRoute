@@ -69,7 +69,7 @@ function Layout() {
 
   return (
     <div className="conatiner mx-auto w-[95vw] mt-4 flex flex-col gap-4">
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {carData.map(({ id, name, value, icon, bgColor, textColor }) => (
           <Card
             key={id}
@@ -81,7 +81,7 @@ function Layout() {
           />
         ))}
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-4">
         <ToolPanel
           resetRoutes={handleResetRoutes}
           clearAllGraph={clearAll}
@@ -89,7 +89,7 @@ function Layout() {
           nodes={nodes}
           handleSolve={runAlgorithm}
         />
-        <div className="w-2/4">
+        <div className="w-full md:w-2/4">
           <GraphCanvas
             nodes={nodes}
             setNodes={setNodes}
@@ -97,7 +97,7 @@ function Layout() {
             setEdges={setEdges}
           />
         </div>
-        <div className="w-1/4 h-80 overflow-auto bg-white rounded-lg border p-4 font-poppins">
+        <div className="w-full md:w-1/4 h-80 overflow-auto bg-white rounded-lg border p-4 font-poppins">
           <Result result={result} nodes={nodes} edges={edges} />
         </div>
       </div>
