@@ -44,7 +44,7 @@ function Layout() {
     {
       id: 2,
       name: "Total Cities",
-      value: result ? result.path.length : "-",
+      value: result ? result.path.length - 1 : "-",
       icon: GrNodes,
       bgColor: "bg-[#450693]/10",
       textColor: "text-[#450693]",

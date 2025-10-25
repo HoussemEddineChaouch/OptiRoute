@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
-import icon from "../assets/mapicon.png";
-import Card from "./Card";
-// import { motion } from "motion/react";
+
 
 import Layout from "./Layout";
 
