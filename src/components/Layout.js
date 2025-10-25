@@ -17,11 +17,13 @@ function Layout() {
 
   const handleResetRoutes = () => {
     setEdges([]);
+    setResult(null);
   };
 
   const clearAll = () => {
     setEdges([]);
     setNodes([]);
+    setResult(null);
   };
 
   const runAlgorithm = () => {

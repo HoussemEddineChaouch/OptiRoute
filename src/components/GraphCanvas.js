@@ -14,17 +14,16 @@ function GraphCanvas({ nodes, setNodes, edges, setEdges }) {
 
   const handleAddEdge = () => {
     if (!edgeValue || isNaN(edgeValue)) return;
-    setEdges((eds) => [
-      ...eds,
-      {
-        ...pendingConnection,
-        label: edgeValue,
-        data: { weight: parseInt(edgeValue) },
-        type: "straight",
-        
-      },
-    ]);
 
+    const newEdge = {
+      id: `edge-${Date.now()}-${Math.random()}`,
+      ...pendingConnection,
+      label: edgeValue,
+      data: { weight: parseInt(edgeValue) },
+      type: "straight",
+    };
+
+    setEdges((eds) => [...eds, newEdge]);
     setEdgeValue("");
     setShowInput(false);
     setPendingConnection(null);
