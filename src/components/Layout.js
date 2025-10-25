@@ -68,7 +68,7 @@ function Layout() {
   ];
 
   return (
-    <div className="conatiner mx-auto w-[95vw] mt-4 flex flex-col gap-4">
+    <div className="conatiner mx-auto w-[97vw] mt-4 flex flex-col gap-4">
       <div className="flex flex-col md:flex-row gap-4">
         {carData.map(({ id, name, value, icon, bgColor, textColor }) => (
           <Card

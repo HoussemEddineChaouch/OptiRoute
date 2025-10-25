@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <>
-      <div className="conatiner mx-auto w-[95vw] h-[30vh] mt-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center">
+      <div className="conatiner mx-auto w-[97vw] h-[30vh] mt-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center">
         <div className="w-full text-xl md:w-1/2 px-4 font-poppins space-y-3 text-white">
           <h1 ref={textRef} className="font-bold md:text-xl">
             {""}
